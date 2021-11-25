@@ -44,7 +44,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 40px 5rem;
+  padding: 40px 133px 0px 133px;
   background-color: black;
 
   nav {
