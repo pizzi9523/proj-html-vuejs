@@ -1,0 +1,98 @@
+<template>
+  <section class="sign_up">
+    <div class="world_class">
+      <h2>WORLD CLASS Fitness</h2>
+      <img src="../assets/images/divider-xx-red.png" alt="" />
+      <p>
+        At Avada Gym, everything we do from top to bottom is of the heighest
+        quality to ensure we're equipped <br />
+        to help you reach your goals of a healthly and fit lifestyle
+      </p>
+    </div>
+    <div class="sign_up_form">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <img src="..\assets\images\home_img-compressor.jpg" alt="" />
+          </div>
+          <div class="col-6">
+            <form class="form_signup">
+              <h3>Sign Up For A Free Training Session!</h3>
+
+              <label for="name">Name</label>
+              <input type="text" name="username" id="name" />
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" />
+              <button>START NOW!</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</template>
+
+<script>
+export default {};
+</script>
+
+<style lang="scss">
+@import "../assets/scss/variables.scss";
+
+.sign_up {
+  .world_class {
+    text-align: center;
+
+    background-color: $secondary-bg-color;
+    padding: 80px;
+    h2 {
+      padding: 30px;
+      font-size: 32px;
+    }
+    p {
+      padding: 30px;
+      color: $secondary-text-color;
+    }
+  }
+
+  .sign_up_form {
+    background-color: $primary-bg-color;
+    padding: 100px;
+    img {
+      width: 100%;
+    }
+
+    .form_signup {
+      padding: 0 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+
+      h3 {
+        font-size: 20px;
+        margin-bottom: 40px;
+      }
+
+      label {
+        color: $secondary-text-color;
+      }
+      input {
+        background-color: transparent;
+        border: 1px solid $secondary-text-color;
+        padding: 16px;
+        margin-bottom: 20px;
+        color: $secondary-text-color;
+      }
+      button {
+        padding: 20px 10px;
+        background-color: $button-color;
+        border: none;
+        color: $primary-text-color;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+</style>

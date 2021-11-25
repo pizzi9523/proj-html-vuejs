@@ -1,18 +1,18 @@
 <template>
   <main>
     <Jumbotron />
-    <!-- <SignUp /> -->
+    <SignUp />
   </main>
 </template>
 
 <script>
 import Jumbotron from "./Jumbotron.vue";
-// import SignUp from "./SignUp.vue";
+import SignUp from "./SignUp.vue";
 
 export default {
   components: {
     Jumbotron,
-    // SignUp,
+    SignUp,
   },
 };
 </script>

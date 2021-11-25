@@ -8,3 +8,18 @@ body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: $primary-text-color;
 }
+
+.container{
+    width: 1200px;
+    margin: auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-6{
+    width: calc(100% / 2);
+    padding: 0 5px;
+}
