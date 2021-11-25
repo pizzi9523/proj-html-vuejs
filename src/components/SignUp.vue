@@ -13,7 +13,7 @@
       <div class="container">
         <div class="row">
           <div class="col-6">
-            <img src="..\assets\images\home_img-compressor.jpg" alt="" />
+            <img src="../assets/images/home_img-compressor.jpg" alt="" />
           </div>
           <div class="col-6">
             <form class="form_signup">
@@ -69,7 +69,7 @@ export default {};
       gap: 15px;
 
       h3 {
-        font-size: 20px;
+        font-size: 25px;
         margin-bottom: 40px;
       }
 
