@@ -1,10 +1,10 @@
 <template>
-  <header>header</header>
+  <header></header>
 </template>
 
 <script>
 export default {};
 </script>
 
-<style lang="sass">
+<style lang="scss">
 </style>
