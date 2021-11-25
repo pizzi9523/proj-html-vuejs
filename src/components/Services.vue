@@ -5,7 +5,7 @@
         <div class="col-4" v-for="service in services" :key="service">
           <div class="service_card">
             <div class="icon_circle">
-              <i :class="'fas fa-' + service.icon"></i>
+              <i :class="'fas fa-' + service.icon + ' fa-2x'"></i>
             </div>
             <h4>{{ service.title }}</h4>
             <img src="../assets/images/divider-x-red.png" alt="" />
