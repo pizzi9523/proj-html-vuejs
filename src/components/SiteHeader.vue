@@ -1,7 +1,12 @@
 <template>
   <header>
     <div class="logo">
-      <img src="../assets/images/gym_logo_1x.png" alt="" />
+      <img
+        width="180"
+        height="96"
+        src="../assets/images/gym_logo_1x.png"
+        alt=""
+      />
     </div>
     <nav>
       <ul>
@@ -39,8 +44,9 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2.5rem 4rem;
-  background-color: $darker-bg-color;
+  padding: 40px 5rem;
+  background-color: black;
+
   nav {
     color: $primary-text-color;
     ul {
@@ -56,6 +62,7 @@ header {
         a {
           text-decoration: none;
           color: $primary-text-color;
+          font-size: 13px;
         }
       }
     }
