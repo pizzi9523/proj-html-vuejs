@@ -35,7 +35,7 @@ export default {
   padding-bottom: 200px;
   .home_image_wrapper {
     opacity: 1;
-    transform: perspective(1000px) scale(1);
+    transform: scale(1);
     transition: transform 0.35s;
     padding: 10px;
     text-align: center;

@@ -6,6 +6,7 @@
     <Result />
     <HighPerformance />
     <Banner />
+    <Trainers />
   </main>
 </template>
 
@@ -16,6 +17,7 @@ import Services from "./Services.vue";
 import Result from "./Result.vue";
 import HighPerformance from "./HighPerformance.vue";
 import Banner from "./Banner.vue";
+import Trainers from "./Trainers.vue";
 
 export default {
   components: {
@@ -25,6 +27,7 @@ export default {
     Result,
     HighPerformance,
     Banner,
+    Trainers,
   },
 };
 </script>
