@@ -60,9 +60,13 @@ header {
           }
         }
         a {
+          transition: 0.5s;
           text-decoration: none;
           color: $primary-text-color;
           font-size: 13px;
+          &:hover {
+            color: $active-text-color;
+          }
         }
       }
     }
