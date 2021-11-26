@@ -1,14 +1,10 @@
 <template>
   <section class="sign_up">
-    <div class="world_class">
-      <h2>WORLD CLASS Fitness</h2>
-      <img src="../assets/images/divider-xx-red.png" alt="" />
-      <p>
-        At Avada Gym, everything we do from top to bottom is of the heighest
-        quality to ensure we're equipped <br />
-        to help you reach your goals of a healthly and fit lifestyle
-      </p>
-    </div>
+    <SectionTitle
+      title="WORLD CLASS Fitness"
+      text="At Avada Gym, everything we do from top to bottom is of the heighest
+      quality to ensure we're equipped to help you reach your goals of a healthly and fit lifestyle"
+    />
     <div class="sign_up_form">
       <div class="container">
         <div class="row">
@@ -33,28 +29,18 @@
 </template>
 
 <script>
-export default {};
+import SectionTitle from "./SectionTitle.vue";
+export default {
+  components: {
+    SectionTitle,
+  },
+};
 </script>
 
 <style lang="scss">
 @import "../assets/scss/variables.scss";
 
 .sign_up {
-  .world_class {
-    text-align: center;
-
-    background-color: $secondary-bg-color;
-    padding: 80px;
-    h2 {
-      padding: 30px;
-      font-size: 32px;
-    }
-    p {
-      padding: 30px;
-      color: $secondary-text-color;
-    }
-  }
-
   .sign_up_form {
     background-color: $primary-bg-color;
     padding: 100px;
