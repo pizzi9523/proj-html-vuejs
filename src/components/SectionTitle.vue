@@ -1,5 +1,5 @@
 <template>
-  <div class="world_class">
+  <div class="section_title">
     <h2>{{ title }}</h2>
     <img src="../assets/images/divider-xx-red.png" alt="" />
     <p v-if="text">
@@ -20,10 +20,9 @@ export default {
 <style lang="scss">
 @import "../assets/scss/variables.scss";
 
-.world_class {
+.section_title {
   text-align: center;
 
-  background-color: $secondary-bg-color;
   padding: 80px;
   h2 {
     padding: 30px;

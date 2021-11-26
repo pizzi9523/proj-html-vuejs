@@ -1,10 +1,13 @@
 <template>
   <section class="sign_up">
-    <SectionTitle
-      title="WORLD CLASS Fitness"
-      text="At Avada Gym, everything we do from top to bottom is of the heighest
+    <div class="world_class">
+      <SectionTitle
+        title="WORLD CLASS Fitness"
+        text="At Avada Gym, everything we do from top to bottom is of the heighest
       quality to ensure we're equipped to help you reach your goals of a healthly and fit lifestyle"
-    />
+      />
+    </div>
+
     <div class="sign_up_form">
       <div class="container">
         <div class="row">
@@ -41,6 +44,9 @@ export default {
 @import "../assets/scss/variables.scss";
 
 .sign_up {
+  .world_class {
+    background-color: $secondary-bg-color;
+  }
   .sign_up_form {
     background-color: $primary-bg-color;
     padding: 100px;

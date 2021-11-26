@@ -2,7 +2,7 @@
   <section class="services">
     <div class="container">
       <div class="row">
-        <div class="col-4" v-for="service in services" :key="service">
+        <div class="col-4" v-for="service in services" :key="service.title">
           <div class="service_card">
             <div class="icon_circle">
               <i :class="'fas fa-' + service.icon + ' fa-2x'"></i>
