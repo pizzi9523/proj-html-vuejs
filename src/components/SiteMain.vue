@@ -7,6 +7,7 @@
     <HighPerformance />
     <Banner />
     <Trainers />
+    <PerformanceNews />
   </main>
 </template>
 
@@ -18,6 +19,7 @@ import Result from "./Result.vue";
 import HighPerformance from "./HighPerformance.vue";
 import Banner from "./Banner.vue";
 import Trainers from "./Trainers.vue";
+import PerformanceNews from "./PerformanceNews.vue";
 
 export default {
   components: {
@@ -28,6 +30,7 @@ export default {
     HighPerformance,
     Banner,
     Trainers,
+    PerformanceNews,
   },
 };
 </script>
