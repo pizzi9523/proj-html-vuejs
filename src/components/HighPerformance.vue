@@ -34,10 +34,21 @@ export default {
   background-color: $secondary-bg-color;
   padding-bottom: 200px;
   .home_image_wrapper {
-    padding: 20px;
+    opacity: 1;
+    transform: perspective(1000px) scale(1);
+    transition: transform 0.35s;
+    padding: 10px;
     text-align: center;
+    &:hover {
+      transform: scale(1.03);
+      cursor: pointer;
+      img {
+        box-shadow: 0px 0px 25px black;
+      }
+    }
     img {
       width: 100%;
+      transition: all 0.35s;
     }
   }
 }
