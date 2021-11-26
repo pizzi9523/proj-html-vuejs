@@ -5,6 +5,7 @@
     <Services />
     <Result />
     <HighPerformance />
+    <Banner />
   </main>
 </template>
 
@@ -14,6 +15,7 @@ import SignUp from "./SignUp.vue";
 import Services from "./Services.vue";
 import Result from "./Result.vue";
 import HighPerformance from "./HighPerformance.vue";
+import Banner from "./Banner.vue";
 
 export default {
   components: {
@@ -22,6 +24,7 @@ export default {
     Services,
     Result,
     HighPerformance,
+    Banner,
   },
 };
 </script>
