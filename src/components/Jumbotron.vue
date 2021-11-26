@@ -3,7 +3,7 @@
     <div class="jumbo_text">
       <h1>NO PAIN NO GAIN</h1>
       <p>Motivation is what gets you started. Habit is what keeps you going.</p>
-      <button>JOIN US TODAY</button>
+      <button class="button_light">JOIN US TODAY</button>
     </div>
   </section>
 </template>
@@ -36,18 +36,6 @@ export default {};
 
     p {
       font-size: 23px;
-    }
-
-    button {
-      margin-top: 30px;
-      padding: 13px 30px;
-      background-color: transparent;
-      color: $secondary-text-color;
-      font-size: 16px;
-      border: 1px solid $secondary-text-color;
-      &:hover {
-        cursor: pointer;
-      }
     }
   }
 }

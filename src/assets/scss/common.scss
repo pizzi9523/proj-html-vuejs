@@ -7,6 +7,7 @@
 body{
     font-family: "Montserrat";
     color: $primary-text-color;
+    background-color: $primary-bg-color;
 }
 
 li{
@@ -15,6 +16,21 @@ li{
 
 button{
     font-family: "Montserrat";
+    &.button_light{
+         
+      margin-top: 30px;
+      padding: 13px 30px;
+      background-color: transparent;
+      color: $secondary-text-color;
+      font-size: 16px;
+      border: 1px solid $secondary-text-color;
+      &:hover {
+        cursor: pointer;
+        color: $primary-text-color;
+        border: 1px solid $primary-text-color;
+
+      }
+    }
 
 }
 
