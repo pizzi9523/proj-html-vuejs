@@ -102,7 +102,7 @@ export default {
         .wrapper_parallax {
           width: 100%;
           i {
-            display: block;
+            visibility: visible;
           }
         }
       }
@@ -113,6 +113,7 @@ export default {
     .wrapper_parallax {
       background-image: url("../assets/images/home-parallax.jpg");
       background-size: cover;
+      filter: hue-rotate(90deg);
       width: 0;
       height: 100%;
       display: flex;
@@ -123,10 +124,10 @@ export default {
       top: 0;
       left: 0;
       opacity: 0.8;
-      transition: 0.6s;
+      transition: 0.2s;
 
       i {
-        display: none;
+        visibility: hidden;
         opacity: 1;
       }
     }
