@@ -62,7 +62,7 @@ export default {
   background-image: url("../assets/images/gym_bkgd_bw-compressor.jpg");
   background-size: cover;
   background-position-y: center;
-  padding: 100px;
+  padding: 120px;
   .service_card {
     text-align: center;
     .icon_circle {

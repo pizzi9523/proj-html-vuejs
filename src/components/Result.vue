@@ -14,7 +14,9 @@
             />
             <div>
               <p>{{ review.text }}</p>
-              <p>- {{ review.reviewer }}</p>
+              <p>
+                <strong>- {{ review.reviewer }}</strong>
+              </p>
             </div>
           </div>
         </div>
