@@ -3,7 +3,7 @@
     <SectionTitle title="PERFORMANCE NEWS" />
     <div class="container">
       <div class="row">
-        <div v-for="news in blog" :key="news.title" class="col-3 special">
+        <div v-for="news in blog" :key="news.title" class="col-3">
           <div class="card_news">
             <div class="card_img_wrapper">
               <img :src="require(`../assets/images/${news.img}.jpg`)" alt="" />
@@ -17,6 +17,26 @@
               <h2>{{ news.title }}</h2>
               <p>
                 {{ news.content.substr(0, 90) + " [...]" }}
+              </p>
+            </div>
+          </div>
+
+          <div class="card_news">
+            <div class="card_img_wrapper">
+              <img
+                :src="require(`../assets/images/${news.img_1}.jpg`)"
+                alt=""
+              />
+              <div class="wrapper_parallax">
+                <i class="fas fa-link fa-2x"></i>
+                <i class="fas fa-search fa-2x"></i>
+              </div>
+            </div>
+
+            <div class="body_card">
+              <h2>{{ news.title_1 }}</h2>
+              <p>
+                {{ news.content_1.substr(0, 90) + " [...]" }}
               </p>
             </div>
           </div>
@@ -38,6 +58,11 @@ export default {
           content:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem sunt labore minus incidunt doloribus saepe quibusdam ut quo,sapiente voluptatibus earum deleniti, numquam animi ex consequatur eligendi aliquam perferendis repellat. Quibusdam eius molestiae ipsa non fuga quis, natus obcaecati dolorum, tempora reprehenderit quia maxime quisquam numquam nostrum quae fugiat corporis.",
           img: "blog1",
+
+          title_1: "To be number one, train like you're number two",
+          content_1:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem sunt labore minus incidunt doloribus saepe quibusdam ut quo,sapiente voluptatibus earum deleniti, numquam animi ex consequatur eligendi aliquam perferendis repellat. Quibusdam eius molestiae ipsa non fuga quis, natus obcaecati dolorum, tempora reprehenderit quia maxime quisquam numquam nostrum quae fugiat corporis.",
+          img_1: "blog4-400x289",
         },
 
         {
@@ -45,6 +70,11 @@ export default {
           content:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem sunt labore minus incidunt doloribus saepe quibusdam ut quo,sapiente voluptatibus earum deleniti, numquam animi ex consequatur eligendi aliquam perferendis repellat. Quibusdam eius molestiae ipsa non fuga quis, natus obcaecati dolorum, tempora reprehenderit quia maxime quisquam numquam nostrum quae fugiat corporis.",
           img: "blog6-400x400",
+
+          title_1: "Top 5 mistakes every gym member makes",
+          content_1:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem sunt labore minus incidunt doloribus saepe quibusdam ut quo,sapiente voluptatibus earum deleniti, numquam animi ex consequatur eligendi aliquam perferendis repellat. Quibusdam eius molestiae ipsa non fuga quis, natus obcaecati dolorum, tempora reprehenderit quia maxime quisquam numquam nostrum quae fugiat corporis.",
+          img_1: "trainer2-600x445",
         },
 
         {
@@ -52,27 +82,11 @@ export default {
           content:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem sunt labore minus incidunt doloribus saepe quibusdam ut quo,sapiente voluptatibus earum deleniti, numquam animi ex consequatur eligendi aliquam perferendis repellat. Quibusdam eius molestiae ipsa non fuga quis, natus obcaecati dolorum, tempora reprehenderit quia maxime quisquam numquam nostrum quae fugiat corporis.",
           img: "trainer3",
-        },
 
-        {
-          title: "To be number one, train like you're number two",
-          content:
+          title_1: "The myths of shedding body fat explored",
+          content_1:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem sunt labore minus incidunt doloribus saepe quibusdam ut quo,sapiente voluptatibus earum deleniti, numquam animi ex consequatur eligendi aliquam perferendis repellat. Quibusdam eius molestiae ipsa non fuga quis, natus obcaecati dolorum, tempora reprehenderit quia maxime quisquam numquam nostrum quae fugiat corporis.",
-          img: "blog4-400x289",
-        },
-
-        {
-          title: "Top 5 mistakes every gym member makes",
-          content:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem sunt labore minus incidunt doloribus saepe quibusdam ut quo,sapiente voluptatibus earum deleniti, numquam animi ex consequatur eligendi aliquam perferendis repellat. Quibusdam eius molestiae ipsa non fuga quis, natus obcaecati dolorum, tempora reprehenderit quia maxime quisquam numquam nostrum quae fugiat corporis.",
-          img: "trainer2-600x445",
-        },
-
-        {
-          title: "The myths of shedding body fat explored",
-          content:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem sunt labore minus incidunt doloribus saepe quibusdam ut quo,sapiente voluptatibus earum deleniti, numquam animi ex consequatur eligendi aliquam perferendis repellat. Quibusdam eius molestiae ipsa non fuga quis, natus obcaecati dolorum, tempora reprehenderit quia maxime quisquam numquam nostrum quae fugiat corporis.",
-          img: "trainer1",
+          img_1: "trainer1",
         },
       ],
     };
@@ -88,13 +102,11 @@ export default {
 
 .performance_news {
   background-color: $secondary-bg-color;
-  .col-3.special {
-    height: fit-content;
-  }
 
   .card_news {
     background-color: $primary-bg-color;
     margin: 15px;
+
     .card_img_wrapper {
       position: relative;
       &:hover {
