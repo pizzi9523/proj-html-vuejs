@@ -10,8 +10,11 @@
         <img src="../assets/images/divider-white-xx.png" alt="" />
         <p class="author_cit"><strong>BRUCE LEE • QUOTE OF THE DAY</strong></p>
       </div>
+      <!-- /.banner_text  -->
     </div>
+    <!-- /.banner  -->
   </section>
+  <!-- /.testimonial  -->
 </template>
 
 <script>

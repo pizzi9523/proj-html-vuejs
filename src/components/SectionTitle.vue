@@ -6,6 +6,7 @@
       {{ text }}
     </p>
   </div>
+  <!-- /.section_title  -->
 </template>
 
 <script>

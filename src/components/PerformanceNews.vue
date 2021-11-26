@@ -11,7 +11,9 @@
                 <i class="fas fa-link fa-2x"></i>
                 <i class="fas fa-search fa-2x"></i>
               </div>
+              <!-- /.wrapper_parallax -->
             </div>
+            <!-- /.card_img_wrapper -->
 
             <div class="body_card">
               <h2>{{ news.title }}</h2>
@@ -19,7 +21,9 @@
                 {{ news.content.substr(0, 90) + " [...]" }}
               </p>
             </div>
+            <!-- /.body_card  -->
           </div>
+          <!-- /.card_news  -->
 
           <div class="card_news">
             <div class="card_img_wrapper">
@@ -31,7 +35,9 @@
                 <i class="fas fa-link fa-2x"></i>
                 <i class="fas fa-search fa-2x"></i>
               </div>
+              <!-- /.wrapper_parallax -->
             </div>
+            <!-- /.card_img_wrapper -->
 
             <div class="body_card">
               <h2>{{ news.title_1 }}</h2>
@@ -39,11 +45,17 @@
                 {{ news.content_1.substr(0, 90) + " [...]" }}
               </p>
             </div>
+            <!-- /.body_card  -->
           </div>
+          <!-- /.card_news  -->
         </div>
+        <!-- /.col-3  -->
       </div>
+      <!-- /.row  -->
     </div>
+    <!-- /.container  -->
   </section>
+  <!-- /.performance_news  -->
 </template>
 
 <script>

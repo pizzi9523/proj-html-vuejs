@@ -5,7 +5,9 @@
       <p>Motivation is what gets you started. Habit is what keeps you going.</p>
       <button class="button_light">JOIN US TODAY</button>
     </div>
+    <!-- /.jumbo_text  -->
   </section>
+  <!-- /.jumbotron  -->
 </template>
 
 <script>

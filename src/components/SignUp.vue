@@ -7,6 +7,7 @@
       quality to ensure we're equipped to help you reach your goals of a healthly and fit lifestyle"
       />
     </div>
+    <!-- /.world_class  -->
 
     <div class="sign_up_form">
       <div class="container">
@@ -24,11 +25,17 @@
               <input type="email" name="email" id="email" />
               <button>START NOW!</button>
             </form>
+            <!-- /.form_signup -->
           </div>
+          <!-- /.col-6  -->
         </div>
+        <!-- /.row  -->
       </div>
+      <!-- /.container  -->
     </div>
+    <!-- /.sign_up_form  -->
   </section>
+  <!-- /.sign_up  -->
 </template>
 
 <script>

@@ -8,10 +8,15 @@
             <img :src="require(`../assets/images/home-image${n}.jpg`)" alt="" />
             <!-- <img src="../assets/images/home-image1.jpg" alt="" /> -->
           </div>
+          <!-- /.home_image_wrapper -->
         </div>
+        <!-- /.col-3  -->
       </div>
+      <!-- /.row  -->
     </div>
+    <!-- /.container  -->
   </section>
+  <!-- /.high_performance  -->
 </template>
 
 <script>

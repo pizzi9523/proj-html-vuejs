@@ -8,6 +8,7 @@
         alt=""
       />
     </div>
+    <!-- /.logo  -->
     <nav>
       <ul>
         <li
@@ -20,6 +21,7 @@
         </li>
       </ul>
     </nav>
+    <!-- /nav  -->
   </header>
 </template>
 

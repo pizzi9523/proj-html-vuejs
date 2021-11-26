@@ -31,15 +31,23 @@
                   <i class="fab fa-instagram"></i>
                 </div>
               </div>
+              <!-- /.socials_trainer  -->
             </div>
+            <!-- /.body_card  -->
           </div>
+          <!-- /.trainer_card  -->
         </div>
+        <!-- /.col-3  -->
       </div>
+      <!-- /.row  -->
       <div class="button">
         <button class="button_light">VIEW ALL TRAINERS</button>
       </div>
+      <!-- /.button  -->
     </div>
+    <!-- /.container  -->
   </section>
+  <!-- /.trainers  -->
 </template>
 
 <script>

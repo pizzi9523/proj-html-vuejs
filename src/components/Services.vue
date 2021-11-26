@@ -7,14 +7,20 @@
             <div class="icon_circle">
               <i :class="'fas fa-' + service.icon + ' fa-2x'"></i>
             </div>
+            <!-- /.icon_circle  -->
             <h4>{{ service.title }}</h4>
             <img src="../assets/images/divider-x-red.png" alt="" />
             <p>{{ service.description }}</p>
           </div>
+          <!-- /.service_card  -->
         </div>
+        <!-- /.col-4  -->
       </div>
+      <!-- /.row  -->
     </div>
+    <!-- /.container  -->
   </section>
+  <!-- /.services  -->
 </template>
 
 <script>

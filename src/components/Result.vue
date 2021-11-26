@@ -19,10 +19,15 @@
               </p>
             </div>
           </div>
+          <!-- /.review_card  -->
         </div>
+        <!-- /.col-6  -->
       </div>
+      <!-- /.row  -->
     </div>
+    <!-- /.container  -->
   </section>
+  <!-- /.results  -->
 </template>
 
 <script>
