@@ -71,6 +71,9 @@ export default {
   padding: 120px;
   .service_card {
     text-align: center;
+    img {
+      filter: hue-rotate(90deg);
+    }
     .icon_circle {
       margin: auto;
       width: 80px;
