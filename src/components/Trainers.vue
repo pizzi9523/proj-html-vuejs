@@ -20,7 +20,7 @@
               <p>
                 {{ trainer.description }}
               </p>
-              <div class="socials_trainer">
+              <div class="socials">
                 <div class="social_icon">
                   <i class="fab fa-facebook-f"></i>
                 </div>
@@ -124,23 +124,14 @@ export default {
       line-height: 35px;
       color: $secondary-text-color;
     }
+  }
 
-    .socials_trainer {
-      display: flex;
-      gap: 10px;
-
-      .social_icon {
-        width: 50px;
-        height: 50px;
-        text-align: center;
-        line-height: 50px;
-        background-color: $primary-bg-color;
-        border-radius: 10px;
-        &:hover {
-          cursor: pointer;
-          color: $active-text-color;
-        }
-      }
+  .social_icon {
+    background-color: $primary-bg-color;
+    border-radius: 10px;
+    &:hover {
+      cursor: pointer;
+      color: $active-text-color;
     }
   }
 }
