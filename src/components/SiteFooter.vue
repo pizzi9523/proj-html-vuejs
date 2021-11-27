@@ -18,14 +18,14 @@
           <div class="col-4">
             <div class="recent_posts column">
               <h4>RECENT POSTS</h4>
-              <p class="recent_post">
+              <p
+                class="recent_post"
+                v-for="(post, index) in blog"
+                :key="post.img"
+                v-show="index < 2"
+              >
                 <i class="fas fa-chevron-right"></i>
-                <span>Train with free weights or your body weight?</span>
-              </p>
-
-              <p class="recent_post">
-                <i class="fas fa-chevron-right"></i>
-                <span>Nuritional advice that will keep you training</span>
+                <span>{{ post.title }}</span>
               </p>
             </div>
           </div>
@@ -51,20 +51,12 @@
           <div class="copyright">
             <span v-for="(text, index) in copyrightText" :key="text">
               {{ text }}
-              <span v-if="index != copyrightText.length - 1">|</span>
+              <span class="divider" v-if="index != copyrightText.length - 1"
+                >|</span
+              >
             </span>
           </div>
-          <div class="socials">
-            <div class="social_icon">
-              <i class="fab fa-facebook-f"></i>
-            </div>
-            <div class="social_icon">
-              <i class="fab fa-twitter"></i>
-            </div>
-            <div class="social_icon">
-              <i class="fab fa-instagram"></i>
-            </div>
-          </div>
+          <Socials />
         </div>
       </div>
     </div>
@@ -72,14 +64,16 @@
 </template>
 
 <script>
+import Socials from "./Socials.vue";
 export default {
   props: {
     info: Array,
     openingTimes: Array,
     copyrightText: Array,
+    blog: Array,
   },
-  data() {
-    return {};
+  components: {
+    Socials,
   },
 };
 </script>
@@ -145,7 +139,7 @@ export default {
       padding: 80px 0;
       color: $secondary-text-color;
 
-      span {
+      span.divider {
         margin: 0 10px;
       }
     }

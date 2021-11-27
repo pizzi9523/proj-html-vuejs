@@ -1,5 +1,6 @@
 <template>
   <section class="performance_news">
+    <div class="triangle"></div>
     <SectionTitle title="PERFORMANCE NEWS" />
     <div class="container">
       <div class="row">
@@ -65,46 +66,11 @@
 import SectionTitle from "./SectionTitle.vue";
 
 export default {
+  props: {
+    blog: Array,
+  },
   data() {
-    return {
-      blog: [
-        {
-          title: "Train with free weights or your body weight?",
-          content:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem sunt labore minus incidunt doloribus saepe quibusdam ut quo,sapiente voluptatibus earum deleniti, numquam animi ex consequatur eligendi aliquam perferendis repellat. Quibusdam eius molestiae ipsa non fuga quis, natus obcaecati dolorum, tempora reprehenderit quia maxime quisquam numquam nostrum quae fugiat corporis.",
-          img: "blog1",
-
-          title_1: "To be number one, train like you're number two",
-          content_1:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem sunt labore minus incidunt doloribus saepe quibusdam ut quo,sapiente voluptatibus earum deleniti, numquam animi ex consequatur eligendi aliquam perferendis repellat. Quibusdam eius molestiae ipsa non fuga quis, natus obcaecati dolorum, tempora reprehenderit quia maxime quisquam numquam nostrum quae fugiat corporis.",
-          img_1: "blog4-400x289",
-        },
-
-        {
-          title: "Nutritional advice thet will keep you training",
-          content:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem sunt labore minus incidunt doloribus saepe quibusdam ut quo,sapiente voluptatibus earum deleniti, numquam animi ex consequatur eligendi aliquam perferendis repellat. Quibusdam eius molestiae ipsa non fuga quis, natus obcaecati dolorum, tempora reprehenderit quia maxime quisquam numquam nostrum quae fugiat corporis.",
-          img: "blog6-400x400",
-
-          title_1: "Top 5 mistakes every gym member makes",
-          content_1:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem sunt labore minus incidunt doloribus saepe quibusdam ut quo,sapiente voluptatibus earum deleniti, numquam animi ex consequatur eligendi aliquam perferendis repellat. Quibusdam eius molestiae ipsa non fuga quis, natus obcaecati dolorum, tempora reprehenderit quia maxime quisquam numquam nostrum quae fugiat corporis.",
-          img_1: "trainer2-600x445",
-        },
-
-        {
-          title: "Simple principles for your next workout",
-          content:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem sunt labore minus incidunt doloribus saepe quibusdam ut quo,sapiente voluptatibus earum deleniti, numquam animi ex consequatur eligendi aliquam perferendis repellat. Quibusdam eius molestiae ipsa non fuga quis, natus obcaecati dolorum, tempora reprehenderit quia maxime quisquam numquam nostrum quae fugiat corporis.",
-          img: "trainer3",
-
-          title_1: "The myths of shedding body fat explored",
-          content_1:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem sunt labore minus incidunt doloribus saepe quibusdam ut quo,sapiente voluptatibus earum deleniti, numquam animi ex consequatur eligendi aliquam perferendis repellat. Quibusdam eius molestiae ipsa non fuga quis, natus obcaecati dolorum, tempora reprehenderit quia maxime quisquam numquam nostrum quae fugiat corporis.",
-          img_1: "trainer1",
-        },
-      ],
-    };
+    return {};
   },
   components: {
     SectionTitle,
@@ -118,6 +84,10 @@ export default {
 .performance_news {
   background-color: $secondary-bg-color;
   padding-bottom: 80px;
+  .triangle {
+    background-color: $primary-bg-color;
+    left: 50%;
+  }
 
   .card_news {
     background-color: $primary-bg-color;
