@@ -2,7 +2,11 @@
   <div id="app">
     <SiteHeader :navMenu="navMenuOptions" />
     <SiteMain />
-    <SiteFooter />
+    <SiteFooter
+      :info="gym_info"
+      :openingTimes="gym_openingTimes"
+      :copyrightText="copyright"
+    />
   </div>
 </template>
 
@@ -22,6 +26,32 @@ export default {
         "Membership",
         "Testimonials",
         "Blog",
+      ],
+
+      gym_info: [
+        {
+          address: "12345 North Main Street, New York NY 555555",
+          phone: "1.800.555.6789",
+          email: "info@your-domain.com",
+        },
+      ],
+
+      gym_openingTimes: [
+        {
+          weekday: "Monday - Friday",
+          timeTable: "9:00 - 19:00",
+        },
+        {
+          weekday: "Saturday - Sunday",
+          timeTable: "9:00 - 21:00",
+        },
+      ],
+
+      copyright: [
+        "© Copyright 2015",
+        "Avada Theme by ThemeFusion",
+        "All Rights Reserved",
+        "Powered by WordPress",
       ],
     };
   },

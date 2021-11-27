@@ -49,10 +49,10 @@
       <div class="container">
         <div class="row bottom_row_footer">
           <div class="copyright">
-            <span>© Copyright 2015</span> |
-            <span>Avada Theme by ThemeFusion </span>|
-            <span>All Rights Reserved</span> |
-            <span>Powered by WordPress</span>
+            <span v-for="(text, index) in copyrightText" :key="text">
+              {{ text }}
+              <span v-if="index != copyrightText.length - 1">|</span>
+            </span>
           </div>
           <div class="socials">
             <div class="social_icon">
@@ -73,27 +73,13 @@
 
 <script>
 export default {
+  props: {
+    info: Array,
+    openingTimes: Array,
+    copyrightText: Array,
+  },
   data() {
-    return {
-      info: [
-        {
-          address: "12345 North Main Street, New York NY 555555",
-          phone: "1.800.555.6789",
-          email: "info@your-domain.com",
-        },
-      ],
-
-      openingTimes: [
-        {
-          weekday: "Monday - Friday",
-          timeTable: "9:00 - 19:00",
-        },
-        {
-          weekday: "Saturday - Sunday",
-          timeTable: "9:00 - 21:00",
-        },
-      ],
-    };
+    return {};
   },
 };
 </script>
@@ -157,6 +143,8 @@ export default {
     align-items: center;
     .copyright {
       padding: 80px 0;
+      color: $secondary-text-color;
+
       span {
         margin: 0 10px;
       }
