@@ -52,6 +52,9 @@
         <!-- /.col-3  -->
       </div>
       <!-- /.row  -->
+      <div class="button">
+        <button class="button_light">READ ALL ARTICLES</button>
+      </div>
     </div>
     <!-- /.container  -->
   </section>
@@ -114,6 +117,7 @@ export default {
 
 .performance_news {
   background-color: $secondary-bg-color;
+  padding-bottom: 80px;
 
   .card_news {
     background-color: $primary-bg-color;
