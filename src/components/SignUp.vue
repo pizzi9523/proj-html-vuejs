@@ -1,6 +1,8 @@
 <template>
   <section class="sign_up">
     <div class="world_class">
+      <div class="triangle"></div>
+
       <SectionTitle
         title="WORLD CLASS Fitness"
         text="At Avada Gym, everything we do from top to bottom is of the heighest
@@ -53,6 +55,12 @@ export default {
 .sign_up {
   .world_class {
     background-color: $secondary-bg-color;
+    position: relative;
+    .triangle {
+      bottom: -50px;
+      left: 50%;
+      background-color: $secondary-bg-color;
+    }
   }
   .sign_up_form {
     background-color: $primary-bg-color;
@@ -89,6 +97,7 @@ export default {
         color: $primary-text-color;
         &:hover {
           cursor: pointer;
+          filter: brightness(0.8);
         }
       }
     }

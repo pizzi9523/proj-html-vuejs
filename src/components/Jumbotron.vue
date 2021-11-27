@@ -39,6 +39,10 @@ export default {};
     p {
       font-size: 23px;
     }
+
+    button.button_light {
+      margin-top: 30px;
+    }
   }
 }
 </style>

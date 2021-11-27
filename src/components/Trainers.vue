@@ -20,17 +20,7 @@
               <p>
                 {{ trainer.description }}
               </p>
-              <div class="socials">
-                <div class="social_icon">
-                  <i class="fab fa-facebook-f"></i>
-                </div>
-                <div class="social_icon">
-                  <i class="fab fa-twitter"></i>
-                </div>
-                <div class="social_icon">
-                  <i class="fab fa-instagram"></i>
-                </div>
-              </div>
+              <Socials />
               <!-- /.socials_trainer  -->
             </div>
             <!-- /.body_card  -->
@@ -52,6 +42,7 @@
 
 <script>
 import SectionTitle from "./SectionTitle.vue";
+import Socials from "./Socials.vue";
 
 export default {
   data() {
@@ -85,6 +76,7 @@ export default {
   },
   components: {
     SectionTitle,
+    Socials,
   },
 };
 </script>

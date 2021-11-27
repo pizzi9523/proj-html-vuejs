@@ -7,7 +7,7 @@
     <HighPerformance />
     <Banner />
     <Trainers />
-    <PerformanceNews />
+    <PerformanceNews :blog="blog" />
     <JoinUs />
   </main>
 </template>
@@ -34,6 +34,10 @@ export default {
     Trainers,
     PerformanceNews,
     JoinUs,
+  },
+
+  props: {
+    blog: Array,
   },
 };
 </script>

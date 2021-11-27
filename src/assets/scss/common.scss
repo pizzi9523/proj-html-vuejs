@@ -18,7 +18,6 @@ button{
     font-family: "Montserrat";
     &.button_light{
          
-      margin-top: 30px;
       padding: 13px 30px;
       background-color: transparent;
       color: $secondary-text-color;
@@ -68,15 +67,12 @@ button{
     padding: 0 5px;
 }
 
-.socials {
-      display: flex;
-      gap: 10px;
 
-      .social_icon {
-        width: 50px;
-        height: 50px;
-        text-align: center;
-        line-height: 50px;
-        
-      }
-    }
+
+    .triangle {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background-color: red;
+  }

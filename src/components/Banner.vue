@@ -26,7 +26,7 @@ section.testimonial {
   background-image: url("../assets/images/home-testimonial-bg.jpg");
   background-position-y: center;
   background-repeat: no-repeat;
-  background-size: 100% 1240px;
+  background-size: cover;
 }
 .banner {
   display: flex;
@@ -36,14 +36,14 @@ section.testimonial {
     text-align: center;
 
     p.author_cit {
-      padding: 40px 0 200px 0;
+      padding: 40px 0 150px 0;
     }
   }
   p.cit {
     width: 700px;
     font-size: 30px;
     line-height: 50px;
-    padding: 200px 0 40px 0;
+    padding: 150px 0 40px 0;
   }
 }
 </style>

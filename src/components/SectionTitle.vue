@@ -24,7 +24,7 @@ export default {
 .section_title {
   text-align: center;
   img {
-    filter: hue-rotate(90deg);
+    filter: hue-rotate(120deg);
   }
 
   padding: 80px;
