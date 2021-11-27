@@ -125,6 +125,7 @@ export default {
         cursor: pointer;
         .wrapper_parallax {
           width: 100%;
+          opacity: 0.9;
         }
       }
       img {
@@ -132,9 +133,7 @@ export default {
       }
     }
     .wrapper_parallax {
-      background-image: url("../assets/images/home-parallax.jpg");
-      background-size: 100% 100%;
-      filter: hue-rotate(90deg);
+      background-color: $active-text-color;
       width: 0;
       height: 100%;
       display: flex;
@@ -144,13 +143,9 @@ export default {
       position: absolute;
       top: 0;
       left: 0;
-      opacity: 0.8;
-      transition: 0.5s;
+      opacity: 0;
+      transition: 0.6s;
       overflow: hidden;
-
-      i {
-        opacity: 1;
-      }
     }
   }
 
