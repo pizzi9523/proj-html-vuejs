@@ -3,7 +3,7 @@
     <Jumbotron />
     <SignUp />
     <Services />
-    <Result />
+    <ResultReview />
     <HighPerformance />
     <Banner />
     <Trainers />
@@ -16,7 +16,7 @@
 import Jumbotron from "./Jumbotron.vue";
 import SignUp from "./SignUp.vue";
 import Services from "./Services.vue";
-import Result from "./Result.vue";
+import ResultReview from "./ResultReview.vue";
 import HighPerformance from "./HighPerformance.vue";
 import Banner from "./Banner.vue";
 import Trainers from "./Trainers.vue";
@@ -28,7 +28,7 @@ export default {
     Jumbotron,
     SignUp,
     Services,
-    Result,
+    ResultReview,
     HighPerformance,
     Banner,
     Trainers,
