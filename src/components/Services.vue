@@ -72,15 +72,15 @@ export default {
   .service_card {
     text-align: center;
     img {
-      filter: hue-rotate(90deg);
+      filter: hue-rotate($image-hue-rotate);
     }
     .icon_circle {
       margin: auto;
       width: 80px;
       height: 80px;
       border-radius: 50%;
-      color: $button-color;
-      border: 1px solid $button-color;
+      color: $primary-theme-color;
+      border: 1px solid $primary-theme-color;
       display: flex;
       justify-content: center;
       align-items: center;

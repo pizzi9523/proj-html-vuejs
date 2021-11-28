@@ -58,7 +58,7 @@ header {
         margin: 0 1rem;
         &.active {
           a {
-            color: $active-text-color;
+            color: $primary-theme-color;
           }
         }
         a {
@@ -67,7 +67,7 @@ header {
           color: $primary-text-color;
           font-size: 13px;
           &:hover {
-            color: $active-text-color;
+            color: $primary-theme-color;
           }
         }
       }

@@ -92,7 +92,7 @@ export default {
       }
       button {
         padding: 20px 10px;
-        background-color: $button-color;
+        background-color: $primary-theme-color;
         border: none;
         color: $primary-text-color;
         &:hover {

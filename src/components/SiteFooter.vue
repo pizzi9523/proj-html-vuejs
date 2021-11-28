@@ -110,7 +110,7 @@ export default {
 
   .find_us {
     span:hover {
-      color: $active-text-color;
+      color: $primary-theme-color;
       cursor: pointer;
     }
   }
@@ -125,7 +125,7 @@ export default {
     padding: 15px 0;
     border-bottom: 1px solid $footer-text-color;
     span:hover {
-      color: $active-text-color;
+      color: $primary-theme-color;
       cursor: pointer;
     }
   }
@@ -144,7 +144,7 @@ export default {
       }
     }
     .social_icon {
-      background-color: $active-text-color;
+      background-color: $primary-theme-color;
     }
   }
 }

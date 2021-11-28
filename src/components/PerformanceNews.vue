@@ -107,7 +107,7 @@ export default {
       }
     }
     .wrapper_parallax {
-      background-color: $active-text-color;
+      background-color: $primary-theme-color;
       width: 0;
       height: 100%;
       display: flex;

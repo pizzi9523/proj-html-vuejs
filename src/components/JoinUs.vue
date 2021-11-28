@@ -20,9 +20,11 @@ export default {};
 </script>
 
 <style lang="scss">
+@import "../assets/scss/variables.scss";
+
 .join_us {
   background-image: url("../assets/images/home-parallax.jpg");
-  filter: hue-rotate(120deg);
+  filter: hue-rotate($image-hue-rotate);
   background-position-y: -216px;
   padding: 40px;
   .join {
