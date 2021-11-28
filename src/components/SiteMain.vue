@@ -4,7 +4,7 @@
     <SignUp />
     <Services />
     <ResultReview />
-    <HighPerformance />
+    <HighPerformanceFacilities />
     <Banner />
     <Trainers />
     <PerformanceNews :blog="blog" />
@@ -17,7 +17,7 @@ import Jumbotron from "./Jumbotron.vue";
 import SignUp from "./SignUp.vue";
 import Services from "./Services.vue";
 import ResultReview from "./ResultReview.vue";
-import HighPerformance from "./HighPerformance.vue";
+import HighPerformanceFacilities from "./HighPerformanceFacilities.vue";
 import Banner from "./Banner.vue";
 import Trainers from "./Trainers.vue";
 import PerformanceNews from "./PerformanceNews.vue";
@@ -29,7 +29,7 @@ export default {
     SignUp,
     Services,
     ResultReview,
-    HighPerformance,
+    HighPerformanceFacilities,
     Banner,
     Trainers,
     PerformanceNews,
