@@ -34,6 +34,14 @@ export default {};
       font-size: 36px;
       font-weight: 700;
     }
+    button {
+      color: $primary-text-color;
+      border-color: $primary-text-color;
+      &:hover {
+        color: $secondary-text-color;
+        border-color: $secondary-text-color;
+      }
+    }
   }
 }
 </style>
