@@ -4,15 +4,17 @@
       <div class="container">
         <div class="row">
           <div class="col-4">
-            <div class="find_us column" v-for="inf in info" :key="inf.phone">
+            <div class="column">
               <h4>COME FIND US</h4>
-              <p class="address">{{ inf.address }}</p>
-              <p class="phone">
-                Phone: <span>{{ inf.phone }}</span>
-              </p>
-              <p class="email">
-                Email: <span>{{ inf.email }}</span>
-              </p>
+              <div class="find_us" v-for="inf in info" :key="inf.phone">
+                <p class="address">{{ inf.address }}</p>
+                <p class="phone">
+                  Phone: <span>{{ inf.phone }}</span>
+                </p>
+                <p class="email">
+                  Email: <span>{{ inf.email }}</span>
+                </p>
+              </div>
             </div>
           </div>
           <div class="col-4">
@@ -87,6 +89,9 @@ export default {
   padding: 80px 0;
   .column {
     margin: 0 23px;
+    .find_us {
+      margin-bottom: 20px;
+    }
   }
   h4 {
     font-weight: unset;
