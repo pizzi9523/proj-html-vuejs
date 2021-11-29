@@ -5,7 +5,7 @@
     <Services />
     <ResultReview />
     <HighPerformanceFacilities />
-    <Banner />
+    <TestimonialBanner />
     <Trainers />
     <PerformanceNews :blog="blog" />
     <JoinUs />
@@ -18,7 +18,7 @@ import SignUp from "./SignUp.vue";
 import Services from "./Services.vue";
 import ResultReview from "./ResultReview.vue";
 import HighPerformanceFacilities from "./HighPerformanceFacilities.vue";
-import Banner from "./Banner.vue";
+import TestimonialBanner from "./TestimonialBanner.vue";
 import Trainers from "./Trainers.vue";
 import PerformanceNews from "./PerformanceNews.vue";
 import JoinUs from "./JoinUs.vue";
@@ -30,7 +30,7 @@ export default {
     Services,
     ResultReview,
     HighPerformanceFacilities,
-    Banner,
+    TestimonialBanner,
     Trainers,
     PerformanceNews,
     JoinUs,
