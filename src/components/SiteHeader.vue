@@ -1,12 +1,7 @@
 <template>
   <header>
     <div class="logo">
-      <img
-        width="180"
-        height="96"
-        src="../assets/images/gym_logo_1x.png"
-        alt=""
-      />
+      <img src="../assets/images/gym_logo_1x.png" alt="" />
     </div>
     <!-- /.logo  -->
     <nav>
