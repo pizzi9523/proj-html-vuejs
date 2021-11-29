@@ -20,7 +20,7 @@ export default {};
 .jumbotron {
   background-image: url("../assets/images/home-banner.jpg");
   background-size: cover;
-  background-position-y: -75px;
+  background-position-y: -20px;
   background-position-x: center;
   color: $primary-text-color;
   margin-top: -180px;
@@ -30,9 +30,9 @@ export default {};
   justify-content: center;
   align-items: center;
   .jumbo_text {
-    margin-top: 135px;
+    margin-top: 15px;
     h1 {
-      font-size: 125px;
+      font-size: 90px;
       padding: 10px;
     }
 
