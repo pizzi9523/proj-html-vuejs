@@ -6,6 +6,7 @@
           <div class="service_card">
             <div class="icon_circle">
               <i :class="'fas fa-' + service.icon + ' fa-2x'"></i>
+              <div class="icon_circle_effect"></div>
             </div>
             <!-- /.icon_circle  -->
             <h4>{{ service.title }}</h4>
@@ -74,6 +75,16 @@ export default {
     img {
       filter: hue-rotate($image-hue-rotate);
     }
+
+    .icon_circle_effect {
+      position: absolute;
+      width: 145px;
+      height: 145px;
+      border-radius: 50%;
+      border: 15px solid $primary-theme-color;
+      animation: pulse-ring 2s cubic-bezier(0.215, 0.61, 0.355, 1) 1;
+      display: none;
+    }
     .icon_circle {
       margin: auto;
       width: 80px;
@@ -84,6 +95,31 @@ export default {
       display: flex;
       justify-content: center;
       align-items: center;
+      transition: 0.9s;
+
+      &:hover {
+        transform: scale(0.9);
+        cursor: pointer;
+        .icon_circle_effect {
+          display: block;
+          opacity: 0;
+        }
+
+        & + h4 {
+          color: $primary-theme-color;
+          transition: 0.5s;
+        }
+      }
+    }
+    @keyframes pulse-ring {
+      0% {
+        transform: scale(0.66);
+        opacity: 0.8;
+      }
+      80%,
+      100% {
+        opacity: 0;
+      }
     }
     h4 {
       font-size: 20px;
