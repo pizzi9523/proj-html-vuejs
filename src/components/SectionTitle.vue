@@ -33,10 +33,11 @@ export default {
     font-size: 32px;
   }
   p {
-    width: 750px;
+    width: 900px;
     margin: auto;
     padding: 30px;
     color: $secondary-text-color;
+    line-height: 30px;
   }
 }
 </style>
