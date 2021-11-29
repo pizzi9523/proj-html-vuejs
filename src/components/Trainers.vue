@@ -123,7 +123,6 @@ export default {
     background-color: $primary-bg-color;
     border-radius: 10px;
     &:hover {
-      cursor: pointer;
       color: $primary-theme-color;
     }
   }
