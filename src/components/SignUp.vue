@@ -82,6 +82,7 @@ export default {
 
       label {
         color: $secondary-text-color;
+        font-size: 13px;
       }
       input {
         background-color: transparent;

@@ -37,9 +37,9 @@ export default {};
     button {
       color: $primary-text-color;
       border-color: $primary-text-color;
+      transition: 0.5s;
       &:hover {
-        color: $secondary-text-color;
-        border-color: $secondary-text-color;
+        transform: scale(1.1);
       }
     }
   }

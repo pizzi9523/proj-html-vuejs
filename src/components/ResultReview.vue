@@ -13,7 +13,7 @@
               alt=""
             />
             <div>
-              <p>{{ review.text }}</p>
+              <p class="review_text">{{ review.text }}</p>
               <p>
                 <strong>- {{ review.reviewer }}</strong>
               </p>
@@ -88,6 +88,9 @@ export default {
       padding: 10px 0;
       line-height: 30px;
       color: $secondary-text-color;
+      &.review_text {
+        font-size: 13px;
+      }
     }
   }
 }

@@ -128,7 +128,8 @@ export default {
     p {
       color: $secondary-text-color;
       padding: 15px;
-      line-height: 25px;
+      line-height: 30px;
+      font-size: 12px;
     }
   }
 }
