@@ -85,7 +85,6 @@ export default {
 
 .top_footer {
   background-color: $secondary-bg-color;
-
   padding: 80px 0;
   .column {
     margin: 0 23px;
@@ -101,10 +100,10 @@ export default {
   p {
     line-height: 30px;
     color: $secondary-text-color;
-    font-size: 16px;
+    font-size: 14px;
     i {
-      font-size: 11px;
-      line-height: 28px;
+      font-size: 9px;
+      line-height: 30px;
       padding-right: 5px;
       display: block;
     }
@@ -141,6 +140,7 @@ export default {
     justify-content: space-between;
     align-items: center;
     .copyright {
+      font-size: 12px;
       padding: 80px 0;
       color: $secondary-text-color;
 
