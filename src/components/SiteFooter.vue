@@ -32,11 +32,15 @@
             </div>
           </div>
           <div class="col-4">
-            <div class="openinf_times column">
+            <div class="column">
               <h4>OPENING TIMES</h4>
 
-              <div v-for="open in openingTimes" :key="open.weekday">
-                <p class="weekdays">{{ open.weekday }}</p>
+              <div
+                class="opening_times"
+                v-for="open in openingTimes"
+                :key="open.weekday"
+              >
+                <p class="weekdays">Weekdays {{ open.weekday }}</p>
                 <p class="time-table">{{ open.timeTable }}</p>
               </div>
             </div>
@@ -87,9 +91,12 @@ export default {
   background-color: $secondary-bg-color;
   padding: 80px 0;
   .column {
-    margin: 0 23px;
+    margin-right: 23px;
     .find_us {
       margin-bottom: 20px;
+    }
+    .opening_times {
+      margin-bottom: 24px;
     }
   }
   h4 {

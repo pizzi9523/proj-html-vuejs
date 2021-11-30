@@ -19,7 +19,7 @@
             <div class="body_card">
               <h2>{{ news.title }}</h2>
               <p>
-                {{ news.content.substr(0, 90) + " [...]" }}
+                {{ news.content.substr(0, 150) + " [...]" }}
               </p>
             </div>
             <!-- /.body_card  -->
@@ -43,7 +43,7 @@
             <div class="body_card">
               <h2>{{ news.title_1 }}</h2>
               <p>
-                {{ news.content_1.substr(0, 90) + " [...]" }}
+                {{ news.content_1.substr(0, 150) + " [...]" }}
               </p>
             </div>
             <!-- /.body_card  -->
@@ -134,6 +134,7 @@ export default {
     p {
       line-height: 35px;
       color: $secondary-text-color;
+      font-size: 14px;
     }
   }
 }

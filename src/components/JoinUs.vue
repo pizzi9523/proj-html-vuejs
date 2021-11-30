@@ -26,20 +26,24 @@ export default {};
   background-image: url("../assets/images/home-parallax.jpg");
   filter: hue-rotate($image-hue-rotate);
   background-position-y: -216px;
-  padding: 40px;
+  padding: 60px;
   .join {
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     h2 {
-      font-size: 36px;
+      font-size: 32px;
       font-weight: 700;
+      margin-bottom: 13px;
     }
     button {
-      color: $primary-text-color;
-      border-color: $primary-text-color;
+      margin-right: 175px;
+      color: $secondary-text-color;
+      border-color: $secondary-text-color;
       transition: 0.5s;
       &:hover {
         transform: scale(1.1);
+        color: $primary-text-color;
+        border-color: $primary-text-color;
       }
     }
   }

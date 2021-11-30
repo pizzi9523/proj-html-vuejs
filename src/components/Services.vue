@@ -72,6 +72,7 @@ export default {
   padding: 120px;
   .service_card {
     text-align: center;
+
     img {
       filter: hue-rotate($image-hue-rotate);
     }
@@ -122,7 +123,7 @@ export default {
       }
     }
     h4 {
-      font-size: 20px;
+      font-size: 16px;
       padding: 15px 0;
     }
     p {

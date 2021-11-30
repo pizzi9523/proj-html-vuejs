@@ -86,7 +86,7 @@ export default {
 
 .trainer_card {
   background-color: $secondary-bg-color;
-  margin-bottom: 10px;
+  margin: 20px;
 
   .card_img_wrapper {
     opacity: 1;

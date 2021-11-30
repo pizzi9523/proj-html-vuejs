@@ -21,7 +21,7 @@
             <form class="form_signup">
               <h3>Sign Up For A Free Training Session!</h3>
 
-              <label for="name">Name</label>
+              <label for="name">Name ..*</label>
               <input type="text" name="username" id="name" />
               <label for="email">Email</label>
               <input type="email" name="email" id="email" />
@@ -92,10 +92,11 @@ export default {
         color: $secondary-text-color;
       }
       button {
-        padding: 20px 10px;
+        padding: 15px;
         background-color: $primary-theme-color;
         border: none;
         color: $primary-text-color;
+        font-size: 16px;
         &:hover {
           cursor: pointer;
           filter: brightness(0.8);
