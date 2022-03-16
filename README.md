@@ -1,24 +1,3 @@
-# proj-html-vuejs
 
-## Project setup
-```
-npm install
-```
+https://user-images.githubusercontent.com/84190473/158635296-ee495b89-edad-4bf5-9a1c-af9b4eac294b.mp4
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
